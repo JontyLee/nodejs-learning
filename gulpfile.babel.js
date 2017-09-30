@@ -50,8 +50,12 @@ gulp.task('build-css', () => {
         .pipe(gulp.dest(dest + '/css'));
 });
 
+gulp.task('scripts', () => {
+
+})
+
 gulp.task('html', () => {
-    return gulp.src(src + '/views/**/*.html')
+    gulp.src(src + '/views/**/*.html')
         .pipe($.useref())
         // Minify any HTML
         .pipe($.if('*.html', $.htmlmin({
