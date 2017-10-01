@@ -50,10 +50,6 @@ gulp.task('build-css', () => {
         .pipe(gulp.dest(dest + '/css'));
 });
 
-gulp.task('scripts', () => {
-
-})
-
 gulp.task('html', () => {
     gulp.src(src + '/views/**/*.html')
         .pipe($.useref())
